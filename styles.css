@@ -1,0 +1,316 @@
+/*boilerplate*/
+@font-face{
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', 'sans-serif';
+    
+}
+html,body{
+    height: auto;
+    /* height: 100%; */
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* background-image: url(images/nature3.jpg); */
+}
+/*nav*/
+.nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+}
+.page2 {
+    display: flex;
+    gap: 40px;
+}
+.page2 h3 a{
+    /* border-bottom: 3px solid transparent; */
+    transition:  border-bottom 0.3s ease-in-out;
+}
+.page2 h3 a:hover{
+    border-bottom: 3px solid white;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.light-mode{
+    background-color: white;
+    color: black;
+}
+.light-mode .nav h3 a{
+    background-color: white;
+    color: black;
+}
+.light-mode .page2 h3 a{
+    border-bottom:  3px solid transparent;
+}
+.light-mode .page2 h3 a:hover{
+    border-bottom: 3px solid black;
+}
+
+/* home */
+
+.home{
+    /* display: flex; */
+    height: 420px;
+    width: 100%;
+    /* background-image: url(images/nature2.jpg); */
+    background-color: rgb(35, 189, 181);
+    /* justify-content: center; */
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.myImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.line1 {
+    text-align: center;
+}
+.line2 {
+    text-align: center;
+    font-size: 25PX;
+}
+.line3 {
+    text-align: center;
+    font-size: 30PX;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.mybtn{
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid rgb(12, 82, 212);
+    /* transition:  border-bottom 0.3s ease-in-out; */
+    /* transition: border-bottom 0.3s ease-in-out; */
+}
+.mybtn a{
+    text-decoration: none;
+    color: black;
+}
+.mybtn:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.light-mode .mybtn{
+    background-color: black;
+    color: white;
+}
+.light-mode .mybtn a{
+    background-color: black;
+    color: white;
+}
+.light-mode .mybtn:hover{
+    background-color: wheat;
+    /* color: white; */
+}
+
+/* projects */
+
+.projects {
+    height: 480px;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    margin-top: 20px;
+    text-align: center;
+}
+.boxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    height: 420px;
+    width: 320px;
+    border: 2px solid white;
+}
+.box .ecommerce{
+    height: 150px;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+.box .portfolio{
+    height: 230px;
+    
+    margin-top: 90px;
+    border-radius: 20px;
+}
+.box .chatapp{
+    height: 150px;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+.light-mode .projects{
+    background-color: white;
+    color: black;
+}
+.light-mode .box{
+    border: 2px solid black;
+}
+.light-mode .box .ecommerce{
+    border: 2px solid black;
+}
+.light-mode .portfolio{
+    border: 2px solid black;
+}
+.light-mode .chatapp{
+    border: 2px solid black;
+}
+
+/* skills */
+
+.skills {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(15, 253, 174);
+    margin-top: 20px;
+    text-align: center; 
+
+}
+/* .html{
+    display: flex;
+    justify-content: center;
+} */
+.html1{
+    margin-top: 10px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-left: 620px;
+    /* border-bottom: 10px; */
+    border: 2px solid white;
+}
+
+.images{
+    display: flex;
+}
+.images1{
+    display: flex;
+}
+.css{
+    display: flex;
+    margin-left: 400px;
+    /* border-radius: 50%; */
+ }
+.css1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.javascript{
+    
+    display: flex;
+    margin-left: 290px;
+    /* gap: 700px; */
+}
+.javascript1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.light-mode .skills{
+    background-color: white;
+    color: white;
+}
+.light-mode .skills h1{
+    /* background-color: black; */
+    color: black;
+}
+.light-mode .html1{
+    border: 2px solid black;
+}
+.light-mode .css1{
+    border: 2px solid black;
+}
+.light-mode .javascript1{
+    border: 2px solid black;
+}
+
+/* .contacts */
+
+.contacts{
+    height: 520px;
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: red;  */
+    /* text-align: center;    */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 20px;
+
+}
+.form label{
+    margin-left: 450px;
+    margin-top: 20px;
+}
+.form input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 450px;
+    border: none;
+}
+.form textarea{
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 450px;
+    border: none;
+}
+.form .btnSubmit{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin-left: 560px;
+    margin-top: 30px;
+    border: none;
+}
+.contacts h1{
+    text-align: center;
+}
+.light-mode .form input{
+    border: 2px solid black;
+}
+.light-mode .form textarea{
+    border: 2px solid black;
+}
+.light-mode .form .btnSubmit{
+    border: 2px solid black;
+}
